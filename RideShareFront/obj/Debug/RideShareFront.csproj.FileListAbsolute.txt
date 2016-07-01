@@ -14,6 +14,8 @@ C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideSh
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\RideShareFront.dll.config
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\RideShareFront.dll
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\RideShareFront.pdb
+C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\EntityFramework.dll
+C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\EntityFramework.SqlServer.dll
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\Microsoft.AI.DependencyCollector.dll
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -22,12 +24,17 @@ C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideSh
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\Microsoft.AI.WindowsServer.dll
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\Microsoft.ApplicationInsights.dll
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\MySql.Data.dll
+C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\MySql.Data.Entity.EF6.dll
+C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\MySql.Web.dll
+C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\EntityFramework.xml
+C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\EntityFramework.SqlServer.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\Microsoft.AI.DependencyCollector.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\Microsoft.AI.Web.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\Microsoft.ApplicationInsights.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\obj\Debug\RideShareFront.csprojResolveAssemblyReference.cache
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\obj\Debug\RideShareFront.dll
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\obj\Debug\RideShareFront.pdb
-C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\obj\Debug\RideShareFront.csprojResolveAssemblyReference.cache

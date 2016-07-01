@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="rideshare_projectModelStoreContainer" CdmEntityContainer="rideshare_projectEntities">
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="rideshare_projectModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="username" ColumnName="username" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

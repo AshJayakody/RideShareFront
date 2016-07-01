@@ -4,7 +4,7 @@ app.controller('loginController', function ($scope) {
     $scope.isDriver= false;
     $scope.userName = "";
     $scope.password = "";
-    $scope.name = "";
+    $scope.name = "Angular Works";
 
     $scope.userImage = "/Assets/login/userLog_icon.png";
     $scope.driverImage = "/Assets/login/driverLog_icon.png";
@@ -38,7 +38,7 @@ app.controller('loginController', function ($scope) {
     }
 
     $scope.register = function () {
-        $location.path('/Register');
+        window.location = "/Register.html";
     }
    
 

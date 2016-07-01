@@ -166,10 +166,21 @@
     .forgot-password:focus {
         color: rgb(12, 97, 33);
     }
-
+#driver{
+    display:inline-block;
+    
+    width:60px;
+    height:60px;
+    background-size:contain;
+}
 
 user.img-responsive{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    background-size:contain;
     margin: 0 auto;
+
 }
 
     
