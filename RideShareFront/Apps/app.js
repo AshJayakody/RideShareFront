@@ -1,5 +1,5 @@
 ﻿var app = angular.module('myApp', []);
-app.controller('loginController', function ($scope) {
+app.controller('loginController',['$scope','$http',AuthenticateController]);
     $scope.isUser = false;
     $scope.isDriver= false;
     $scope.userName = "";
@@ -40,15 +40,9 @@ app.controller('loginController', function ($scope) {
     $scope.register = function () {
         window.location = "/Register.html";
     }
-   
 
-   
-});
+    $scope.login =function(){
+        $http.post('/api/Authenticate/post/').success (function(){alert("Login successfully!!")});
+        
+    }
 
-app.controller('splashScrn', function($location, $timeout) {
-
-    $timeout(function() {
-        $location.path('/LoginForm.html');
-    }, 3000);
-
-})
