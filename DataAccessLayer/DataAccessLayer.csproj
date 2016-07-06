@@ -253,6 +253,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\DataAccessLayerContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\RegisterUserModel.cs" />
     <Compile Include="Models\user.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

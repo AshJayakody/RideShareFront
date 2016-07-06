@@ -1,96 +1,62 @@
-﻿<!DOCTYPE html>
-<html ng-app="myApp">
-<head>
-    <title></title>
-	<meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../scripts/angular.min.js"></script>
-    <link href="../Styles/CSS/bootstrap.min.css" rel="stylesheet" />
-    <script src="../Apps/app.js"></script>
-    <link href="../Styles/CSS/style.css" rel="stylesheet" />
-</head>
+﻿<!--login form-->
+<div class="container body-content" ng-controller="loginController">
+    <div class="container" >
+        <div class="card card-container">
+            <div class="product">
+                <img src="../Assets/login/login_logo.png" />
+            </div>
 
-<body>
-    <!--Splashing Image--> 
-    <div class="splash" ng-cloak="">
-        <div class="container body-content">
-            <div class="container">
-                <div class="card card-container">
-                    <img src="../Assets/main/splash.png" />
-                </div>
+            <div class="row" style="width:auto; height:20px">
             </div>
+
+            <div style="float:left">
+                <!--
+
+        <span>isUser:{{isUser}}</span>
+        <span>isDriver:{{isDriver}}</span> -->
+                <table class="table-responsive">
+                    <tr>
+
+                        <td>
+                            <a id="user" href="" style="float:left" ng-click="setUser() ; setUserImage();setDriverImage()">
+                                <img src="{{userImage}}" />
+                            </a>
+                        </td>
+                        <td>
+                            <img class="img-responsive" src="../Assets/login/or.png"  />
+                        </td>
+                        <td>
+                        <a id="driver" href="" style="float:left" ng-click="setDriver() ; setDriverImage();setUserImage()">
+                                <img src="{{driverImage}}" />
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+
             </div>
+            <div class="row" style="width:auto; height:120px">
+            </div>
+
+            <div style="float:left">
+                <form class="form-signin">
+                    <span id="reauth-email" class="reauth-email"></span>
+                    <input type="text" id="inputuserName" class="form-control" placeholder="User Name " ng-model="userName" required autofocus>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password"  ng-model="password" required>
+                    <div class="btn-toolbar">
+                        <button class="btn btn-primary btn-block btn-signin" type="button" ng-click="login()">Login</button>
+
+                        <a href="#" class="forgot-password">
+                            Forgot the password?
+                        </a>
+                        <button class="btn btn-primary btn-block btn-register" type="button" ng-click="register()">Register</button>
+                        {{name}}
+                    </div>
+                </form><!-- /form -->
+
+            </div>
+        </div> <!--card-container--> 
+
         </div>
 
-            <!--Login Page-->
-            <!--header-->
-            <div ng-cloak="">
-                <div class="navbar navbar-inverse navbar-fixed-top">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <span style="color:white;font-family:Arial;font-size:x-large;"> Login </span>
-                        </div>
-
-                    </div>
-                </div>
-                <!--login form-->
-                <div class="container body-content" >
-                    <div class="container" ng-controller="loginController">
-                        <div class="card card-container">
-                        <div class="product">
-                            <img src="../Assets/login/login_logo.png"  />
-                            </div>
-
-                            <div class="row" style="width:auto; height:20px">
-                            </div >
-                                <div style="float:left">
-                                    <!--<span>isUser:{{isUser}}</span>
-                                    <span>isDriver:{{isDriver}}</span>-->
-
-                                    <a id="user" href="" style="float:left" ng-click="setUser() ; setUserImage();setDriverImage()" >
-                                        <img src="{{userImage}}" />
-                                    </a>
-                                    <div class="product">
-                                    <img src="../Assets/login/or.png" style="height:30% ; width:28% " />
-                                     </div>
-                                   
-                                    
-                                    <a id="driver" href="" style="float:left" ng-click="setDriver() ; setDriverImage();setUserImage()">
-                                        <img src="{{driverImage}}" />
-                                    </a>
-                                  </div>
-                             
-                            <div class="row" style="width:auto; height:120px">
-                            </div>
-                           
-                                <div style="float:left">
-                                    <form class="form-signin">
-                                        <span id="reauth-email" class="reauth-email"></span>
-                                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                                        <div class="btn-toolbar">
-                                            <button class="btn btn-primary btn-block btn-signin" type="button">Login</button>
-
-                                            <a href="#" class="forgot-password">
-                                                Forgot the password?
-                                            </a>
-                                            <button class="btn btn-primary btn-block btn-register" type="button" ng-click="register()">Register</button>
-                                        </div>
-                                    </form><!-- /form -->
-                             
-                            </div>
-                        </div><!-- /card-container -->
-                    </div><!-- /container -->
-                </div>
-            
-
-            <script>
-                window.onload = function () {
-                    window.setTimeout(function () {
-                        angular.bootstrap(document.body, []);
-                    }, 100000);
-                }
-            </script>
-
-</body>
-</html>
+        
+</div>

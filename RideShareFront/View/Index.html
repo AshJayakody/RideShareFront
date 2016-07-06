@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+
+<body>
+    <!--Splashing Image-->
+    <div class="splash" ng-cloak="">
+        <div class="container body-content">
+            <div class="container">
+                <div class="card card-container">
+                    <img src="../Assets/main/splash.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Login Page-->
+    <!--header-->
+    <div ng-cloak="">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <span style="color:white;font-family:Arial;font-size:x-large;"> Login </span>
+                </div>
+
+            </div>
+        </div>
+        <div class="container body-content">
+            <div class="container" ng-controller="loginController">
+                <div ng-include src="'Login.html'"></div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <script src="../scripts/angular.min.js"></script>
+
+        <script src="../Apps/app.js"></script>
+        <link href="../Styles/CSS/bootstrap.min.css" rel="stylesheet" />
+        <link href="../Styles/CSS/style.css" rel="stylesheet" />
+        <script src="../scripts/angular-ui-router.js"></script>
+        <script src="../scripts/angular.min.js"></script>
+
+        <script>
+            window.onload = function () {
+                window.setTimeout(function () {
+                    angular.bootstrap(document.body, []);
+                }, 3000);
+            }
+        </script>
+
+</body>
+</html>

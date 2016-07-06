@@ -175,7 +175,9 @@
     <Content Include="scripts\jquery-3.0.0.min.js" />
     <Content Include="Styles\CSS\bootstrap.min.css" />
     <Content Include="Styles\CSS\style.css" />
+    <Content Include="View\Index.html" />
     <Content Include="View\Login.html" />
+    <Content Include="View\map.html" />
     <Content Include="View\Register.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -186,13 +188,13 @@
     <Folder Include="Styles\Font\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
-      <Project>{0582304e-fdd4-40d1-b80a-93979755644a}</Project>
-      <Name>DataAccessLayer</Name>
-    </ProjectReference>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Service References\" />
+    <ProjectReference Include="..\WebServiceLayer\WebServiceLayer.csproj">
+      <Project>{c598b22e-538c-4f11-a39d-dfeb69b42081}</Project>
+      <Name>WebServiceLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
