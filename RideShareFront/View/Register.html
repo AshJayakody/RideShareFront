@@ -22,34 +22,48 @@
         </div>-->
 
         <div style="float:left">
-            <form class="form-signin" ng-controller="registerController">
+            <form class="form-signin" ng-controller="loginController">
                 <div class="row">
-                    <img src="../Assets/register/add_picture.png" class="center-block"/>
+                    <img src="../Assets/register/add_picture.png" class="center-block" />
                 </div>
                 <div class="row">
-                    <span class="center-block">Upload Image</span>
+                    <span style="text-align:center">Upload Image</span>
                 </div>
            
                 <span id="reauth-email" class="reauth-email"></span>
-                <ng-form class="form-inline">
-                    <ng-form class="form-group">
-                        <input type="text" id="inputfirstName" class="form-control" placeholder="First Name" required autofocus>
-
-                        <input type="text" id="inputlastName" class="form-control" placeholder="Last Name" required>
-                    </ng-form>
-                    </ng-form>
-                    <ng-form class="form-group">
+                <!--<table>
+                    <tr>
+                        <td>
+                            <ng-form class="form-group">
+                                <input type="text" id="inputfirstName" class="form-control" placeholder="First Name" required autofocus>
+                            </ng-form>
+                        </td>
+                        <td>
+                            <ng-form class="form-group">
+                                <input type="text" id="inputlastName" class="form-control" placeholder="Last Name" required>
+                            </ng-form>
+                        <td>
+                    </tr>
+                </table>-->
+                <ng-form class="form-group">
                     <input type="text" id="inputuserName" class="form-control" ng-model="registerUserName" placeholder="User Name" required>
-                    <input type="email" id="inputemail" class="form-control" ng-modle="registerEmail" placeholder="E mail" required />
+                </ng-form>
+                
+                <ng-form class="form-group">
+                    <input type="email" id="inputemail" class="form-control" ng-model="registerEmail" placeholder="E mail" required />
+                </ng-form>
+              
+                <ng-form class="form-group">
                     <input type="password" id="inputPassword" class="form-control" ng-model="registerPassword" placeholder="Password" required />
-                   </ng-form>
+                </ng-form>
                     <div class="row" style="width:auto; height:20px">
                     </div>
                     <div class="btn-toolbar">
-                        <button class="btn btn-primary btn-block btn-register" ng-click="registeruser()" type="button">Register</button>
+                        <button class="btn btn-primary btn-block btn-register" ng-click="submit()" type="button">Register</button>
+                        <!--<button type="submit" class="btn btn-primary btn-block btn-register" >Register</button>-->
                     </div>
 </form><!-- /form -->
-
+            <span>{{user.userName}}</span>
         </div>
     </div><!-- /card-container -->
 </div><!-- /container -->

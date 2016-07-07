@@ -26,11 +26,11 @@ var app = angular.module('myApp', []);
 //            });
 
 
-app.controller('loginController', function ($scope, $http,$location) {
+app.controller('loginController', [ '$scope' , '$http' , function ($scope,$http) {
     $scope.isUser = false;
     $scope.isDriver = false;
-    $scope.userName = "";
-    $scope.password = "";
+    //$scope.userName = "";
+    //$scope.password = "";
     $scope.name = "Angular Works";
 
     $scope.userImage = "/Assets/login/userLog_icon.png";
@@ -69,6 +69,30 @@ app.controller('loginController', function ($scope, $http,$location) {
         window.location = "/View/Register.html";
     }
 
+    $scope.map = function () {
+        //$location.path = "/Register";
+        window.location = "/View/map.html";
+    }
+
+    $scope.submit = function () {
+        if ($scope.registerUserName && $scope.registerEmail && $scope.registerPassword) {
+            var model = {
+                "UserName": $scope.registerUserName,
+                "Email": $scope.registerEmail,
+                "Password": $scope.registerPassword
+            }
+            $http.post('http://localhost:63603//api/register/post', model).
+                success(function (data, status, headers, config) {
+                    alert('Registered Successfully!');
+                    //window.location = "/View/Login.html";
+                }).
+                error(function (data, status, headers, config) {
+                    alert("error");
+                });
+
+        }
+    };
+
 
 
     //$scope.login = function () {
@@ -101,31 +125,33 @@ app.controller('loginController', function ($scope, $http,$location) {
 
 
 
-});
+}]);
 
 
-app.controller('registerController',function($scope,$http){
+//app.controller('registerController',function($scope,$http){
 
-    $scope.registeruser = function () {
+//    $scope.registeruser = function () {
 
-        $scope.hasRegistrationError = false;
-        $scope.result = '';
+//        $scope.hasRegistrationError = false;
+//        $scope.result = '';
 
-        var data = {
-            UserName: $scope.registerUserName,
-            Email: $scope.registerEmail,
-            Password: $scope.registerPassword
+//        var data = {
+//            UserName: $scope.registerUserName,
+//            Email: $scope.registerEmail,
+//            Password: $scope.registerPassword
            
-        };
+//        };
 
-        $http.post(, JSON.stringify(data))
-                .success(function (data, status, headers, config) {
-                    $location.path("/login");
-                }).error(function (data, status, headers, config) {
-                    $scope.hasRegistrationError = true;
-                    var errorMessage = data.Message;
-                    console.log(data);
-                    $scope.registrationErrorDescription = errorMessage;
+//        //$http.post(registerURL, JSON.stringify(data))
+//        //        .success(function (data, status, headers, config) {
+//        //            $location.path("/login");
+//        //        }).error(function (data, status, headers, config) {
+//        //            $scope.hasRegistrationError = true;
+//        //            var errorMessage = data.Message;
+//        //            console.log(data);
+//        //            $scope.registrationErrorDescription = errorMessage;
 
-                }).finally(function () {
-                }); }})
+//        //        }).finally(function () {
+//        //        }); 
+//    }
+//})

@@ -17,6 +17,8 @@ C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAc
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\Antlr3.Runtime.dll
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\EntityFramework.dll
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\EntityFramework.SqlServer.dll
+C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\Google.ProtocolBuffers.dll
+C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\Google.ProtocolBuffers.Serialization.dll
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\Microsoft.AI.DependencyCollector.dll
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -54,12 +56,15 @@ C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAc
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\System.Web.WebPages.dll
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\System.Web.WebPages.Razor.dll
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\WebGrease.dll
+C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\Google.ProtocolBuffers.xml
+C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\Google.ProtocolBuffers.Serialization.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\Microsoft.AI.DependencyCollector.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\Microsoft.AI.Web.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\Microsoft.ApplicationInsights.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\MySql.Data.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\Newtonsoft.Json.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\System.Net.Http.Formatting.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\DataAccessLayer\bin\System.Web.Helpers.xml

@@ -13,9 +13,10 @@ namespace WebServiceLayer.Controllers
     {
         private ApplicationUserManager _userManager;
 
-        public async Task<HttpResponseMessage> Post([FromBody]RegisterUserModel model)
+        public async Task<HttpResponseMessage> Post(RegisterUserModel model)
        
         {
+            //FirstName = model.FirstName,LastName = model.LastName,
             var user = new ApplicationUser { UserName = model.UserName, Email = model.Email  };
             var result = await UserManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
