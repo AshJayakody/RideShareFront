@@ -153,6 +153,12 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="scripts\angular-mocks.js" />
+    <Content Include="scripts\angular-route.js" />
+    <Content Include="scripts\angular-route.min.js" />
+    <Content Include="scripts\angular.js" />
+    <Content Include="scripts\angular.min.js.map" />
+    <Content Include="scripts\angular-route.min.js.map" />
     <None Include="scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\jquery-1.9.1.js" />

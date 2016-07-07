@@ -1,45 +1,66 @@
-﻿
-    <div class="container">
-        <div class="card card-container">
-            <div class="product">
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts/angular.min.js"></script>
+    <script src="../scripts/angular-route.js"></script>
+    <script src="../scripts/angular-route.min.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+                <span style="color:white;font-family:Arial;font-size:x-large;">  Register </span>
+            </div>
+
+        </div>
+<div class="container">
+    <div class="card card-container">
+        
+        <!--<div class="row" style="width:auto; height:10px">
+        </div>-->
+
+        <div style="float:left">
+            <form class="form-signin" ng-controller="registerController">
                 <div class="row">
-                    <img src="../Assets/register/add_picture.png" />
+                    <img src="../Assets/register/add_picture.png" class="center-block"/>
                 </div>
                 <div class="row">
-                    <span>Upload Image</span>
+                    <span class="center-block">Upload Image</span>
                 </div>
-            </div>
-            <div class="row" style="width:auto; height:60px">
-            </div>
+           
+                <span id="reauth-email" class="reauth-email"></span>
+                <ng-form class="form-inline">
+                    <ng-form class="form-group">
+                        <input type="text" id="inputfirstName" class="form-control" placeholder="First Name" required autofocus>
 
-            <div style="float:left">
-                <form class="form-signin">
-                    <div class="row">
-                        <img src="../Assets/register/add_picture.png" />
-                    </div>
-                    <div class="row">
-                        <span>Upload Image</span>
-                    </div>
-
-                    <span id="reauth-email" class="reauth-email"></span>
-
-
-                    <input type="text" id="inputfirstName" class="form-control" placeholder="First Name" required autofocus>
-                    <input type="text" id="inputlastName" class="form-control" placeholder="Last Name" required>
+                        <input type="text" id="inputlastName" class="form-control" placeholder="Last Name" required>
+                    </ng-form>
+                    </ng-form>
+                    <ng-form class="form-group">
                     <input type="text" id="inputuserName" class="form-control" ng-model="registerUserName" placeholder="User Name" required>
                     <input type="email" id="inputemail" class="form-control" ng-modle="registerEmail" placeholder="E mail" required />
                     <input type="password" id="inputPassword" class="form-control" ng-model="registerPassword" placeholder="Password" required />
-
-                    <div class="btn-toolbar">
-                        <button class="btn btn-primary btn-block btn-register" ng-click="register()" type="button">Register</button>
+                   </ng-form>
+                    <div class="row" style="width:auto; height:20px">
                     </div>
-                </form><!-- /form -->
+                    <div class="btn-toolbar">
+                        <button class="btn btn-primary btn-block btn-register" ng-click="registeruser()" type="button">Register</button>
+                    </div>
+</form><!-- /form -->
 
-            </div>
-        </div><!-- /card-container -->
-    </div><!-- /container -->
+        </div>
+    </div><!-- /card-container -->
+</div><!-- /container -->
 
 
+<script src="../Apps/app.js"></script>
+<link href="../Styles/CSS/bootstrap.min.css" rel="stylesheet" />
+<link href="../Styles/CSS/style.css" rel="stylesheet" />
+
+</body>
+</html>
 
 
 

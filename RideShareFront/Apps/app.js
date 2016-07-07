@@ -1,31 +1,32 @@
 ﻿/// <reference path="C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\View/Register.html" />
-///var app = angular.module('myApp', []);
+var app = angular.module('myApp', []);
 
-angular.module("myApp", ['ngRoute'])
-            .config(function ($routeProvider) {
-                $routeProvider.when("/Index", {
-                    templateUrl: "../View/Login.html"
-                });
-                $routeProvider.when("/Login", {
-                    templateUrl: "../View/Login.html",
-                    controller : 'loginController'
-                });
-                $routeProvider.when("/map", {
-                    templateUrl: "../View/map.html"
-                });
-                $routeProvider.when("/Register", {
-                    templateUrl: "../View/Register.html",
-                    controller : 'registerController'
-                });
-                otherwise({
-                    redirectTo: '/Index'
-                });
+//var app= angular.module("myApp", ['ngRoute'])
+//            .config(function ($routeProvider,$locationprovider) {
+//                $routeProvider.when('/', {
+//                    templateUrl: '../View/map.html',
+                    
+//               });
+//                $routeProvider.when('/Login', {
+//                    templateUrl: "../View/Login.html",
+//                    controller : 'loginController'
+//                });
+//                $routeProvider.when("/map", {
+//                    templateUrl: "../View/map.html"
+//                });
+//                $routeProvider.when("/Register", {
+//                    templateUrl: "../View/Register.html",
+//                    controller : 'registerController'
+//                });
+//                otherwise({
+//                    redirectTo: '/Index'
+//                });
                 
-                
-            });
+//                $locationProvider.html5Mode(true);
+//            });
 
 
-app.controller('loginController', function ($scope,$http) {
+app.controller('loginController', function ($scope, $http,$location) {
     $scope.isUser = false;
     $scope.isDriver = false;
     $scope.userName = "";
@@ -64,38 +65,39 @@ app.controller('loginController', function ($scope,$http) {
     }
 
     $scope.register = function () {
-        $location.path = "/Register";
+        //$location.path = "/Register";
+        window.location = "/View/Register.html";
     }
 
-   
-
-    $scope.login = function () {
-        $scope.result = '';
-
-        var loginData = {
-            username: $scope.userName,
-            password: $scope.password
-        };
-
-        $http({
-            method: 'POST',
-            url: '/api/authenticate',
-            data: $.param(loginData),
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
-            }
-        }).then(function (result) {
-            console.log(result);
-            $location.path("/map");
-            sessionStorage.setItem(tokenKey, result.data.access_token);
-          
-        }, function (data, status, headers, config) {
-            $scope.hasLoginError = true;
-            $scope.loginErrorDescription = data.data.error_description;
-        });
 
 
-    }
+    //$scope.login = function () {
+    //    $scope.result = '';
+
+    //    var loginData = {
+    //        username: $scope.userName,
+    //        password: $scope.password
+    //    };
+
+    //    $http({
+    //        method: 'POST',
+    //        url: '/api/authenticate',
+    //        data: $.param(loginData),
+    //        headers: {
+    //            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+    //        }
+    //    }).then(function (result) {
+    //        console.log(result);
+    //        $location.path("/map");
+    //        sessionStorage.setItem(tokenKey, result.data.access_token);
+
+    //    }, function (data, status, headers, config) {
+    //        $scope.hasLoginError = true;
+    //        $scope.loginErrorDescription = data.data.error_description;
+    //    });
+
+
+    //}
 
 
 
@@ -104,7 +106,7 @@ app.controller('loginController', function ($scope,$http) {
 
 app.controller('registerController',function($scope,$http){
 
-    $scope.register = function () {
+    $scope.registeruser = function () {
 
         $scope.hasRegistrationError = false;
         $scope.result = '';
@@ -116,7 +118,7 @@ app.controller('registerController',function($scope,$http){
            
         };
 
-        $http.post(registerUrl, JSON.stringify(data))
+        $http.post(, JSON.stringify(data))
                 .success(function (data, status, headers, config) {
                     $location.path("/login");
                 }).error(function (data, status, headers, config) {
