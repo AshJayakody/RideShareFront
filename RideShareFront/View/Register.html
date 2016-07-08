@@ -15,58 +15,64 @@
             </div>
 
         </div>
-<div class="container">
+<div class="container" ng-controller="registerController">
     <div class="card card-container">
         
         <!--<div class="row" style="width:auto; height:10px">
         </div>-->
 
         <div style="float:left">
-            <form class="form-signin" ng-controller="loginController">
+            <form class="form-signin" >
                 <div class="row">
                     <img src="../Assets/register/add_picture.png" class="center-block" />
                 </div>
-                <div class="row">
+                <!--<div class="row">
                     <span style="text-align:center">Upload Image</span>
-                </div>
-           
+                </div>-->
+
+            <!--Error Messages-->
+                
+                    <ul  class="list-unstyled" ng-repeat="error in errorMessages">
+                        <li><span class="alert alert-warning" role="alert" style="font-size:xx-small" >{{error}}</span></li>
+                    </ul>
+              
+               
                 <span id="reauth-email" class="reauth-email"></span>
-                <!--<table>
+                <table>
                     <tr>
                         <td>
-                            <ng-form class="form-group">
-                                <input type="text" id="inputfirstName" class="form-control" placeholder="First Name" required autofocus>
-                            </ng-form>
-                        </td>
+                            <div class="form-group">
+                                <input type="text" id="inputfirstName" class="form-control" ng-model="registerFirstName" placeholder="First Name" required autofocus>
+                                </div>
+</td>
                         <td>
-                            <ng-form class="form-group">
-                                <input type="text" id="inputlastName" class="form-control" placeholder="Last Name" required>
-                            </ng-form>
+                            <div class="form-group">
+                                <input type="text" id="inputlastName" class="form-control" ng-model="registerLastName" placeholder="Last Name" required>
+                                </div>
                         <td>
                     </tr>
-                </table>-->
-                <ul ng-repeat="error in errorMessages">
-                    <li>{{error}}</li>
-                </ul>
-                <ng-form class="form-group">
+                </table>
+               
+                <div class="form-group">
                     <input type="text" id="inputuserName" class="form-control" ng-model="registerUserName" placeholder="User Name" required>
-                </ng-form>
-                
-                <ng-form class="form-group">
+                </div>
+
+                <div class="form-group">
                     <input type="email" id="inputemail" class="form-control" ng-model="registerEmail" placeholder="E mail" required />
-                </ng-form>
-              
-                <ng-form class="form-group">
+                    </div>
+
+                <div class="form-group">
                     <input type="password" id="inputPassword" class="form-control" ng-model="registerPassword" placeholder="Password" required />
-                </ng-form>
-                    <div class="row" style="width:auto; height:20px">
-                    </div>
-                    <div class="btn-toolbar">
-                        <button class="btn btn-primary btn-block btn-register" ng-click="submit()" type="button">Register</button>
-                        <!--<button type="submit" class="btn btn-primary btn-block btn-register" >Register</button>-->
-                    </div>
+                </div>
+                        <div class="row" style="width:auto; height:20px">
+                        </div>
+                        <div class="btn-toolbar">
+                            <button class="btn btn-primary btn-block btn-register" ng-click="submit()" type="button">Register</button>
+
+                        </div>
+                
 </form><!-- /form -->
-            <span>{{user.userName}}</span>
+           
         </div>
     </div><!-- /card-container -->
 </div><!-- /container -->

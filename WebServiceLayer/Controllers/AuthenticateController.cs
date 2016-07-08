@@ -19,7 +19,7 @@ namespace WebAPIsForLoginRegister.Controllers
         private ApplicationSignInManager _signInManager;
 
 
-        public async Task<HttpResponseMessage> Post([FromBody]LoginModel loginModel)
+        public async Task<HttpResponseMessage> Post(LoginModel loginModel)
         {
             var applicationUser = await UserManager.FindAsync(loginModel.UserName, loginModel.Password);
             if (applicationUser != null)
