@@ -82,7 +82,7 @@ app.controller('loginController', [ '$scope' , '$http' , function ($scope,$http)
 
 
 app.controller('registerController',[ '$scope' , '$http' , function ($scope,$http) {
-    $scope.errorMessages = "";
+    $scope.registererrorMessages = "";
 
         $scope.submit = function () {
             if ($scope.registerFirstName &&  $scope.registerLastName && $scope.registerUserName && $scope.registerEmail && $scope.registerPassword) {
@@ -99,7 +99,7 @@ app.controller('registerController',[ '$scope' , '$http' , function ($scope,$htt
                         //window.location = "/View/Login.html";
                     }).
                     error(function (data, status, headers, config) {
-                        $scope.errorMessages = data;
+                        $scope.registererrorMessages = data;
                         //alert("error");
                        
                     });

@@ -195,9 +195,9 @@ C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\WebSer
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\WebServiceLayer\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\WebServiceLayer\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\WebServiceLayer\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\WebServiceLayer\obj\Debug\WebServiceLayer.csprojResolveAssemblyReference.cache
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\WebServiceLayer\obj\Debug\WebServiceLayer.Migrations.AddDriverLocation.resources
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\WebServiceLayer\obj\Debug\WebServiceLayer.Migrations.AddDriverName_DriverLocation.resources
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\WebServiceLayer\obj\Debug\WebServiceLayer.csproj.GenerateResource.Cache
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\WebServiceLayer\obj\Debug\WebServiceLayer.dll
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\WebServiceLayer\obj\Debug\WebServiceLayer.pdb
-C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\WebServiceLayer\obj\Debug\WebServiceLayer.csprojResolveAssemblyReference.cache

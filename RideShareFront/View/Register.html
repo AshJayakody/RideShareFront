@@ -9,12 +9,14 @@
     <script src="../scripts/angular-route.min.js"></script>
 </head>
 <body>
+    <!--fixed navigation Bar-->
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
                 <span style="color:white;font-family:Arial;font-size:x-large;">  Register </span>
             </div>
 
         </div>
+
 <div class="container" ng-controller="registerController">
     <div class="card card-container">
         
@@ -30,47 +32,48 @@
                     <span style="text-align:center">Upload Image</span>
                 </div>-->
 
-            <!--Error Messages-->
-                
-                    <ul  class="list-unstyled" ng-repeat="error in errorMessages">
+                    <!--Error Messages-->
+                <div class="alert-block">
+                    <ul  class="list-unstyled" ng-repeat="error in registererrorMessages">
                         <li><span class="alert alert-warning" role="alert" style="font-size:xx-small" >{{error}}</span></li>
                     </ul>
-              
-               
-                <span id="reauth-email" class="reauth-email"></span>
-                <table>
-                    <tr>
-                        <td>
-                            <div class="form-group">
-                                <input type="text" id="inputfirstName" class="form-control" ng-model="registerFirstName" placeholder="First Name" required autofocus>
-                                </div>
-</td>
-                        <td>
-                            <div class="form-group">
-                                <input type="text" id="inputlastName" class="form-control" ng-model="registerLastName" placeholder="Last Name" required>
-                                </div>
-                        <td>
-                    </tr>
-                </table>
-               
-                <div class="form-group">
-                    <input type="text" id="inputuserName" class="form-control" ng-model="registerUserName" placeholder="User Name" required>
-                </div>
-
-                <div class="form-group">
-                    <input type="email" id="inputemail" class="form-control" ng-model="registerEmail" placeholder="E mail" required />
                     </div>
 
-                <div class="form-group">
-                    <input type="password" id="inputPassword" class="form-control" ng-model="registerPassword" placeholder="Password" required />
-                </div>
-                        <div class="row" style="width:auto; height:20px">
-                        </div>
-                        <div class="btn-toolbar">
-                            <button class="btn btn-primary btn-block btn-register" ng-click="submit()" type="button">Register</button>
+                <span id="reauth-email" class="reauth-email"></span>
 
-                        </div>
-                
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <input type="text" id="inputfirstName" class="form-control" ng-model="registerFirstName" placeholder="First Name" required autofocus>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <input type="text" id="inputlastName" class="form-control" ng-model="registerLastName" placeholder="Last Name" required>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="form-group">
+                        <input type="text" id="inputuserName" class="form-control" ng-model="registerUserName" placeholder="User Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="inputemail" class="form-control" ng-model="registerEmail" placeholder="E mail" required />
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" id="inputPassword" class="form-control" ng-model="registerPassword" placeholder="Password" required />
+                    </div>
+                    <div class="row" style="width:auto; height:20px">
+                    </div>
+                    <div class="btn-toolbar">
+                        <button class="btn btn-primary btn-block btn-register" ng-click="submit()" type="button">Register</button>
+
+                    </div>
+
 </form><!-- /form -->
            
         </div>
