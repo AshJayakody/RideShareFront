@@ -181,3 +181,12 @@ C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\WebSer
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\WebServiceLayer\obj\Debug\WebServiceLayer.csprojResolveAssemblyReference.cache
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\WebServiceLayer\obj\Debug\WebServiceLayer.dll
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\WebServiceLayer\obj\Debug\WebServiceLayer.pdb
+C:\Users\ASHA\Documents\GitHub\RideShareFront\WebServiceLayer\bin\Google.ProtocolBuffers.dll
+C:\Users\ASHA\Documents\GitHub\RideShareFront\WebServiceLayer\bin\Google.ProtocolBuffers.Serialization.dll
+C:\Users\ASHA\Documents\GitHub\RideShareFront\WebServiceLayer\bin\MySql.Data.dll
+C:\Users\ASHA\Documents\GitHub\RideShareFront\WebServiceLayer\bin\Google.ProtocolBuffers.xml
+C:\Users\ASHA\Documents\GitHub\RideShareFront\WebServiceLayer\bin\Google.ProtocolBuffers.Serialization.xml
+C:\Users\ASHA\Documents\GitHub\RideShareFront\WebServiceLayer\bin\MySql.Data.xml
+C:\Users\ASHA\Documents\GitHub\RideShareFront\WebServiceLayer\bin\System.Web.Cors.dll
+C:\Users\ASHA\Documents\GitHub\RideShareFront\WebServiceLayer\bin\System.Web.Http.Cors.dll
+C:\Users\ASHA\Documents\GitHub\RideShareFront\WebServiceLayer\bin\System.Web.Http.Cors.xml

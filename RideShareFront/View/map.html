@@ -21,6 +21,11 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+    <script src="//rawgit.com/angular-ui/angular-google-maps/2.1.5/dist/angular-google-maps.min.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
+
 </head>
 
 <body>
@@ -119,7 +124,9 @@
 
         <div class="container body-content">
             <div class="container-fluid">
-
+                <div ng-app="myApp" ng-controller="showmap">
+                    <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+                </div>
 
             </div>
 

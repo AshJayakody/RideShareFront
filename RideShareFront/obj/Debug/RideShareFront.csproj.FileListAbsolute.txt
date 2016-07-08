@@ -26,7 +26,6 @@ C:\Users\ASHA\Documents\GitHub\RideShareFront\RideShareFront\bin\Microsoft.AI.We
 C:\Users\ASHA\Documents\GitHub\RideShareFront\RideShareFront\bin\Microsoft.AI.WindowsServer.dll
 C:\Users\ASHA\Documents\GitHub\RideShareFront\RideShareFront\bin\Microsoft.ApplicationInsights.dll
 C:\Users\ASHA\Documents\GitHub\RideShareFront\RideShareFront\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\ASHA\Documents\GitHub\RideShareFront\RideShareFront\bin\MySql.Data.dll
 C:\Users\ASHA\Documents\GitHub\RideShareFront\RideShareFront\bin\MySql.Data.Entity.EF6.dll
 C:\Users\ASHA\Documents\GitHub\RideShareFront\RideShareFront\bin\MySql.Web.dll
 C:\Users\ASHA\Documents\GitHub\RideShareFront\RideShareFront\bin\WebServiceLayer.dll
@@ -63,7 +62,6 @@ C:\Users\ASHA\Documents\GitHub\RideShareFront\RideShareFront\bin\Microsoft.AI.We
 C:\Users\ASHA\Documents\GitHub\RideShareFront\RideShareFront\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\ASHA\Documents\GitHub\RideShareFront\RideShareFront\bin\Microsoft.ApplicationInsights.xml
 C:\Users\ASHA\Documents\GitHub\RideShareFront\RideShareFront\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\ASHA\Documents\GitHub\RideShareFront\RideShareFront\bin\MySql.Data.xml
 C:\Users\ASHA\Documents\GitHub\RideShareFront\RideShareFront\bin\MySql.Data.Entity.EF6.xml
 C:\Users\ASHA\Documents\GitHub\RideShareFront\RideShareFront\bin\MySql.Web.xml
 C:\Users\ASHA\Documents\GitHub\RideShareFront\RideShareFront\bin\Microsoft.Owin.xml
@@ -176,3 +174,7 @@ C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideSh
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\obj\Debug\RideShareFront.csprojResolveAssemblyReference.cache
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\obj\Debug\RideShareFront.dll
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\obj\Debug\RideShareFront.pdb
+C:\Users\ASHA\Documents\GitHub\RideShareFront\RideShareFront\bin\System.Web.Http.Cors.dll
+C:\Users\ASHA\Documents\GitHub\RideShareFront\RideShareFront\bin\MySql.Data.dll
+C:\Users\ASHA\Documents\GitHub\RideShareFront\RideShareFront\bin\System.Web.Cors.dll
+C:\Users\ASHA\Documents\GitHub\RideShareFront\RideShareFront\bin\System.Web.Http.Cors.xml

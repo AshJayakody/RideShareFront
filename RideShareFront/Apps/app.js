@@ -35,6 +35,7 @@ app.controller('loginController', [ '$scope' , '$http' , function ($scope,$http)
 
     $scope.userImage = "/Assets/login/userLog_icon.png";
     $scope.driverImage = "/Assets/login/driverLog_icon.png";
+    $scope.errorMessages = "";
 
     $scope.setUser = function () {
         $scope.isUser = true;
@@ -87,11 +88,22 @@ app.controller('loginController', [ '$scope' , '$http' , function ($scope,$http)
                     //window.location = "/View/Login.html";
                 }).
                 error(function (data, status, headers, config) {
-                    alert("error");
+                    $scope.errorMessages = data;
+                    //alert("error");
                 });
 
         }
     };
+
+    app.controller("showmap", function($scope, $interval) {
+        $scope.map = {
+            center: {
+                latitude: 56.162939,
+                longitude: 10.203921
+            },
+            zoom: 8
+        };
+    });
 
 
 

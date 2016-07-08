@@ -45,6 +45,9 @@
                         <td>
                     </tr>
                 </table>-->
+                <ul ng-repeat="error in errorMessages">
+                    <li>{{error}}</li>
+                </ul>
                 <ng-form class="form-group">
                     <input type="text" id="inputuserName" class="form-control" ng-model="registerUserName" placeholder="User Name" required>
                 </ng-form>
