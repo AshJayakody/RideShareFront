@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using System.Net;
 using System.Net.Http;
 using System.Web;
 using System.Web.Http;
@@ -9,9 +6,9 @@ using WebServiceLayer.Models;
 using Microsoft.AspNet.Identity.Owin;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
-using WebServiceLayer;
 
-namespace WebAPIsForLoginRegister.Controllers
+namespace WebServiceLayer.Controllers
+
 {
     public class AuthenticateController : ApiController
     {
@@ -19,13 +16,13 @@ namespace WebAPIsForLoginRegister.Controllers
         private ApplicationSignInManager _signInManager;
 
 
-        public async Task<HttpResponseMessage> Post(LoginModel loginModel)
+        public async Task<HttpResponseMessage> Post([FromBody]LoginModel loginModel)
         {
             var applicationUser = await UserManager.FindAsync(loginModel.UserName, loginModel.Password);
             if (applicationUser != null)
             {
                 var identity = await UserManager.CreateIdentityAsync(applicationUser, DefaultAuthenticationTypes.ApplicationCookie);
-                HttpContext.Current.GetOwinContext().Authentication.SignIn(identity);
+               // HttpContext.Current.GetOwinContext().Authentication.SignIn(identity);
                 //SignInManager.SignIn(applicationUser, true, true);
                 return Request.CreateResponse(HttpStatusCode.OK, "Success");
             }
