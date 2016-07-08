@@ -6,6 +6,7 @@ using WebServiceLayer.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using System.Net;
+using WebServiceLayer.Enums;
 
 namespace WebServiceLayer.Controllers
 {
@@ -21,6 +22,11 @@ namespace WebServiceLayer.Controllers
             var result = await UserManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
             {
+                //create claims
+                user.Claims.Add(new Microsoft.AspNet.Identity.EntityFramework.IdentityUserClaim() { ClaimType = UserClaims.FirstName.ToString(), ClaimValue = model.FirstName });
+                user.Claims.Add(new Microsoft.AspNet.Identity.EntityFramework.IdentityUserClaim() { ClaimType = UserClaims.LastName.ToString(), ClaimValue = model.LastName });
+
+                UserManager.Update(user);
                 return Request.CreateResponse(HttpStatusCode.OK, "Success");
             }
             else
