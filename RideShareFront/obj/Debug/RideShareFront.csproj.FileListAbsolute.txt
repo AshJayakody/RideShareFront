@@ -180,3 +180,4 @@ C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideSh
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\obj\Debug\RideShareFront.csprojResolveAssemblyReference.cache
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\obj\Debug\RideShareFront.dll
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\obj\Debug\RideShareFront.pdb
+C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\MySql.Data.dll

@@ -63,7 +63,7 @@ app.controller('loginController', [ '$scope' , '$http' , function ($scope,$http)
                 "UserName": $scope.UserName,
                 "Password": $scope.Password
             }
-            $http.post('http://localhost:63603//api/Authenticate/post', loginmodel).
+            $http.post('http://localhost:63603//api/Authentication/post', loginmodel).
                 success(function (data, status, headers, config) {
                     alert('Login Successfully!');
                     //window.location = "/View/map.html";
