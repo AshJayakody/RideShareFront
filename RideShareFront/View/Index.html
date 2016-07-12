@@ -29,87 +29,14 @@
                 <div class="navbar-header">
                     <span style="color:white;font-family:Arial;font-size:x-large;"> Login </span>
                 </div>
+            </div>        
 
-            </div>
         </div>
-        <div class="container body-content">
-            <div class="container" ng-controller="loginController">
-                <!--<div ng-include src="'Login.html'"></div>-->
-                <!--login form-->
-                <!--<div class="container body-content" ng-controller="loginController">
-        <div class="container" >-->
-                <div class="card card-container">
-                    <div class="product">
-                        <img src="../Assets/login/login_logo.png" class="img-responsive" />
-                    </div>
-
-                    <div class="row" style="width:auto; height:20px">
-                    </div>
-
-                    <div style="float:left">
-                        <!--
-
-            <span>isUser:{{isUser}}</span>
-            <span>isDriver:{{isDriver}}</span> -->
-                        <table class="table-responsive">
-                            <tr>
-                                <td>
-                                    <a id="user" href="" style="float:left" ng-click="setUser() ; setUserImage();setDriverImage()">
-                                        <img src="{{userImage}}" class="img-responsive" />
-                                    </a>
-                                </td>
-                                <td>
-                                    <img class="img-responsive" src="../Assets/login/or.png" />
-                                </td>
-                                <td>
-                                    <a id="driver" href="" style="float:left" ng-click="setDriver() ; setDriverImage();setUserImage()">
-                                        <img src="{{driverImage}}" class="img-responsive" />
-                                    </a>
-                                </td>
-                            </tr>
-                        </table>
-
-                    </div>
-                    <div class="row" style="width:auto; height:40px">
-                    </div>
-
-                    <ul class="list-unstyled" ng-repeat="error in errorMessages">
-                        <li><span class="alert alert-danger" role="alert" style="font-size:xx-small">{{error}}</span></li>
-                    </ul>
-
-                    <div style="float:left">
-                        <form class="form-signin">
-                            <span id="reauth-email" class="reauth-email"></span>
-                            <input type="text" id="inputuserName" class="form-control" ng-model="UserName" placeholder="User Name" required autofocus>
-                            <input type="password" id="inputPassword" class="form-control" ng-model="Password" placeholder="Password" required>
-
-                            <div class="row" style="width:auto; height:40px">
-
-                            </div>
-                            <div class="btn-toolbar">
-                                <button class="btn btn-primary btn-block btn-signin" type="button" ng-click="login()">Login</button>
-
-                                <a href="#" class="forgot-password">
-                                    Forgot the password?
-                                </a>
-
-                                <button class="btn btn-primary btn-block btn-register" type="button" ng-click="register()">Register</button>
-
-                                {{name}}
-
-                                <button class="btn btn-primary btn-block btn-register" type="button" ng-click="map()">Map</button>
-                            </div>
-
-                        </form><!-- /form -->
-
-                    </div>
-                </div> <!--card-container-->
-
+    </div>
+            <div class="container body-content">
+                <div ng-view></div>   
                 
             </div>
-            
-            </div>
-        </div>
   
         
 

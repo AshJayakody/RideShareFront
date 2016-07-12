@@ -1,9 +1,30 @@
-﻿/// <reference path="C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\View/Register.html" />
-var app = angular.module('myApp', []);
+﻿var app = angular.module("myApp", ['ngRoute']);
+
+app.config(['$routeProvider',
+  function($routeProvider,$httpprovider) {
+      $routeProvider.
+        when('/login', {
+            templateUrl: '../View/login.html',
+            controller: 'loginController'
+        }).
+           when('/map', {
+               templateUrl: '../View/map.html',
+               controller: 'showmapController',             
+              
+           }).
+          when('/Register', {
+              templateUrl: '../View/Register.html',
+              controller: 'registerController'
+          }).
+        otherwise({
+            redirectTo: '/login' , 
+         
+        });
+  }]);
 
 
-
-app.controller('loginController', [ '$scope' , '$http' , function ($scope,$http) {
+app.controller('loginController', ['$scope', '$http', function ($scope, $http) {
+    $scope.title = "Login";
     $scope.isUser = false;
     $scope.isDriver = false;
     //$scope.userName = "";
@@ -48,10 +69,7 @@ app.controller('loginController', [ '$scope' , '$http' , function ($scope,$http)
         window.location = "/View/Register.html";
     }
 
-    $scope.map = function () {
-        //$location.path = "/Register";
-        window.location = "/View/map.html";
-    }
+    
 
     $scope.errorMessages = "";
 
@@ -65,8 +83,8 @@ app.controller('loginController', [ '$scope' , '$http' , function ($scope,$http)
             }
             $http.post('http://localhost:63603//api/Authentication/post', loginmodel).
                 success(function (data, status, headers, config) {
-                    alert('Login Successfully!');
-                    //window.location = "/View/map.html";
+                    alert('Login Successfully!');                  
+                    window.location = "../View/map.html";
                 }).
                 error(function (data, status, headers, config) {
                     $scope.errorMessages = data;
@@ -83,6 +101,7 @@ app.controller('loginController', [ '$scope' , '$http' , function ($scope,$http)
 
 app.controller('registerController', ['$scope', '$http', function ($scope, $http) {
     $scope.registererrorMessages = "";
+    $scope.title = "Register";
 
     $scope.submit = function () {
         if ($scope.registerFirstName && $scope.registerLastName && $scope.registerUserName && $scope.registerEmail && $scope.registerPassword) {
@@ -109,7 +128,7 @@ app.controller('registerController', ['$scope', '$http', function ($scope, $http
 }]);
 
 
-    app.controller("showmap", function ($scope, $interval) {
+    app.controller("showmapController", function ($scope, $interval) {
         $scope.map = {
             center: {
                 latitude: 56.162939,
@@ -123,26 +142,4 @@ app.controller('registerController', ['$scope', '$http', function ($scope, $http
 
 
 
-//var app= angular.module("myApp", ['ngRoute'])
-//            .config(function ($routeProvider,$locationprovider) {
-//                $routeProvider.when('/', {
-//                    templateUrl: '../View/map.html',
 
-//               });
-//                $routeProvider.when('/Login', {
-//                    templateUrl: "../View/Login.html",
-//                    controller : 'loginController'
-//                });
-//                $routeProvider.when("/map", {
-//                    templateUrl: "../View/map.html"
-//                });
-//                $routeProvider.when("/Register", {
-//                    templateUrl: "../View/Register.html",
-//                    controller : 'registerController'
-//                });
-//                otherwise({
-//                    redirectTo: '/Index'
-//                });
-
-//                $locationProvider.html5Mode(true);
-//            });
