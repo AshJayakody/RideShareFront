@@ -119,6 +119,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Apps\app.js" />
+    <Content Include="Apps\navmenu.js" />
     <Content Include="Assets\login\driverLogActive_icon.png" />
     <Content Include="Assets\login\driverLog_icon.png" />
     <Content Include="Assets\login\login_logo.png" />
@@ -147,6 +148,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
+    <Content Include="Content\jasny-bootstrap.css" />
+    <Content Include="Content\jasny-bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -166,10 +169,12 @@
     <Content Include="scripts\angular.js" />
     <Content Include="scripts\angular.min.js.map" />
     <Content Include="scripts\angular-route.min.js.map" />
+    <Content Include="Content\jasny-bootstrap.css.map" />
     <None Include="scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="scripts\bootstrap-styletoggle.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\jasny-bootstrap.js" />
+    <Content Include="scripts\jasny-bootstrap.min.js" />
     <Content Include="scripts\jquery-1.9.1.js" />
     <Content Include="scripts\jquery-1.9.1.min.js" />
     <Content Include="scripts\jquery-1.9.1.min.map" />
@@ -188,13 +193,20 @@
     <Content Include="scripts\angular.min.js" />
     <Content Include="scripts\bootstrap.min.js" />
     <Content Include="scripts\jquery-3.0.0.min.js" />
+    <Content Include="Styles\CSS\bootstrap-theme.css" />
     <Content Include="Styles\CSS\bootstrap.min.css" />
+    <Content Include="Styles\CSS\canvasstyles.css" />
     <Content Include="Styles\CSS\jasny-bootstrap.css" />
+    <Content Include="Styles\CSS\jasnystyles.css" />
+    <Content Include="Styles\CSS\simple-sidebar.css" />
     <Content Include="Styles\CSS\style.css" />
     <Content Include="View\Index.html" />
+    <Content Include="View\index1.html" />
     <Content Include="View\login.html" />
     <Content Include="View\map.html" />
     <Content Include="View\register.html" />
+    <Content Include="View\test.html" />
+    <Content Include="View\test2.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
