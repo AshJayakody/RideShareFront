@@ -119,7 +119,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Apps\app.js" />
-    <Content Include="Apps\navmenu.js" />
     <Content Include="Assets\login\driverLogActive_icon.png" />
     <Content Include="Assets\login\driverLog_icon.png" />
     <Content Include="Assets\login\login_logo.png" />
@@ -412,18 +411,12 @@
     <Content Include="scripts\jquery-3.0.0.min.js" />
     <Content Include="Styles\CSS\bootstrap-theme.css" />
     <Content Include="Styles\CSS\bootstrap.min.css" />
-    <Content Include="Styles\CSS\canvasstyles.css" />
-    <Content Include="Styles\CSS\jasny-bootstrap.css" />
-    <Content Include="Styles\CSS\jasnystyles.css" />
-    <Content Include="Styles\CSS\simple-sidebar.css" />
+    <Content Include="Styles\CSS\map.css" />
     <Content Include="Styles\CSS\style.css" />
     <Content Include="View\Index.html" />
-    <Content Include="View\index1.html" />
-    <Content Include="View\login.html" />
     <Content Include="View\map.html" />
+    <Content Include="View\login.html" />
     <Content Include="View\register.html" />
-    <Content Include="View\test.html" />
-    <Content Include="View\test2.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

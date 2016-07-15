@@ -4,63 +4,32 @@
     <title></title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="../scripts/angular.min.js"></script>
-    <script src="../scripts/angular-route.js"></script>
-   
-
-    <script src="../scripts/jquery-1.9.1.js"></script>
-    <script src="../Apps/app.js"></script>
-    <script src="../Controller/loginController.js"></script>
-
-    <script src="../Controller/registerController.js"></script>
-
-    <script src="../Controller/showmapController.js"></script>
-
-    <link href="../Styles/CSS/bootstrap.min.css" rel="stylesheet" />
-    <link href="../Styles/CSS/style.css" rel="stylesheet" />
     
     <script src="../scripts/jquery-1.9.1.js"></script>
+    <script src="../scripts/angular.js"></script>
+    <script src="../scripts/angular-route.js"></script>  
+    <script src="../scripts/bootstrap.js"></script>
+
+    <!--css files-->
+    <link href="../Styles/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Styles/CSS/style.css" rel="stylesheet" />  
+    <link href="../Styles/CSS/map.css" rel="stylesheet" />
+
+    <!--Controllers-->
+    <script src="../Apps/app.js"></script>
+    <script src="../Controller/loginController.js"></script>
+    <script src="../Controller/registerController.js"></script>
+    <script src="../Controller/showmapController.js"></script>
+
+    <!--map api key-->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDiC1RjhWDH1dOnSh4VLWrATO4yRuvhN1Y" async="" defer="defer" type="text/javascript"></script>
+
 
 </head>
 
 <body>
-    <!--Splashing Image-->
-    <div class="splash" ng-cloak="">
-        <div class="container body-content">
-            <div class="container">
-                <div class="card card-container">
-                    <img src="../Assets/main/splash.png" />
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--Login Page-->
-    <!--header-->
-    <div ng-cloak="">
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <span style="color:white;font-family:Arial;font-size:x-large;"> Login </span>
-                </div>
-            </div>        
-
-        </div>
-    </div>
-            <div class="container body-content">
-                <div ng-view></div>   
-                
-            </div>
-
-    <script>
-            window.onload = function () {
-                window.setTimeout(function () {
-                    angular.bootstrap(document.body, []);
-                }, 3000);
-            }
-    </script>
-        
-    
+    <div ng-view></div>        
+                                            
 </body>
 </html>

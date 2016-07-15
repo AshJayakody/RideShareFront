@@ -63,7 +63,7 @@
                 }).
                 error(function (data, status, headers, config) {
                     $scope.errorMessages = data;
-                    //alert("error");
+                    alert("error");
 
                 });
 

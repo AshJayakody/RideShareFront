@@ -1,15 +1,28 @@
-﻿
+﻿<!--Splashing Image-->
+<div class="splash" ng-cloak="">
+    <div class="container body-content">
+        <div class="container">
+            <div class="card card-container">
+                <img src="../Assets/main/splash.png" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ng-cloak="">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <span style="color:white;font-family:Arial;font-size:x-large;"> Login </span>
+            </div>
+        </div>
+
+    </div>
+</div>
     <div class="container" ng-controller="loginController">
-        <!--<div ng-include src="'Login.html'"></div>-->
-        <!--login form-->
-        <!--<div class="container body-content" ng-controller="loginController">
-        <div class="container" >-->
         <div class="card card-container">
             <div class="product">
-                <img src="../Assets/login/login_logo.png" class="img-responsive" />
-                
-
-
+                <img src="../Assets/login/login_logo.png" class="img-responsive" />              
             </div>
 
             <div class="row" style="width:auto; height:20px">
@@ -76,4 +89,11 @@
 
 
     </div>
-<script src="../Controller/loginController.js"></script>
+
+<script>
+            window.onload = function () {
+                window.setTimeout(function () {
+                    angular.bootstrap(document.body, []);
+                }, 3000);
+            }
+</script>

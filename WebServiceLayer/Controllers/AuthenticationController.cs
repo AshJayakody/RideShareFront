@@ -17,24 +17,26 @@ namespace WebServiceLayer.Controllers
         private ApplicationSignInManager _signInManager;
 
 
-        public async Task<HttpResponseMessage> Post(LoginModel loginModel)
+        public async Task<HttpResponseMessage> Post([FromBody]LoginModel loginModel)
         {
-          
-            
-                var user = await UserManager.FindAsync(loginModel.UserName, loginModel.Password);
-                if (user != null)
-                {
-                    var identity= await UserManager.CreateIdentityAsync(user, DefaultAuthenticationTypes.ApplicationCookie);
-                    HttpContext.Current.GetOwinContext().Authentication.SignIn(identity);
-                    SignInManager.SignIn(user, true, true);
-                    return Request.CreateResponse(HttpStatusCode.OK, "Success");
-                }
-                else
-                {
-                    return Request.CreateResponse(HttpStatusCode.Unauthorized, "Invalid user credential");
-                }
-            
-           
+
+
+            var user = await UserManager.FindAsync(loginModel.UserName, loginModel.Password);
+            if (user != null)
+            {
+                var identity = await UserManager.CreateIdentityAsync(user, DefaultAuthenticationTypes.ApplicationCookie);
+                HttpContext.Current.GetOwinContext().Authentication.SignIn(identity);
+                SignInManager.SignIn(user, true, true);
+                return Request.CreateResponse(HttpStatusCode.OK, "Success");
+            }
+            else
+            {
+                var res = Request.CreateErrorResponse(HttpStatusCode.Unauthorized, "Invalid User Credential");
+                return res;
+               // return Request.CreateResponse(HttpStatusCode.Unauthorized, "Invalid user credential" );
+            }
+
+
 
             //var applicationUser = await UserManager.FindAsync(loginModel.UserName, loginModel.Password);
             //if (applicationUser != null)
@@ -51,7 +53,7 @@ namespace WebServiceLayer.Controllers
 
         }
 
-      
+
 
         public ApplicationUserManager UserManager
         {
