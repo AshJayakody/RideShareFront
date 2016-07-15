@@ -1,34 +1,33 @@
-﻿
+﻿<div class="container">
     <!--fixed navigation Bar-->
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-                <span style="color:white;font-family:Arial;font-size:x-large;">  Register </span>
-            </div>
+            <span style="color:white;font-family:Arial;font-size:x-large;">  Register </span>
         </div>
+    </div>
 
-<div class="container" ng-controller="registerController">
-    <div class="card card-container">
-        
-        <!--<div class="row" style="width:auto; height:10px">
-        </div>-->
+    <div class="container" ng-controller="registerController">
+        <div class="card card-container">
 
-        <div style="float:left">
-            <form class="form-signin" >
-                <div class="row">
-                    <img src="../Assets/register/add_picture.png" class="center-block" />
-                </div>
-                <!--<div class="row">
-                    <span style="text-align:center">Upload Image</span>
-                </div>-->
+            <!--<div class="row" style="width:auto; height:10px">
+            </div>-->
 
+            <div style="float:left">
+                <form class="form-signin">
+                    <div class="row">
+                        <img src="../Assets/register/add_picture.png" class="center-block" />
+                    </div>
+                    <!--<div class="row">
+                        <span style="text-align:center">Upload Image</span>
+                    </div>-->
                     <!--Error Messages-->
-                <div class="alert-block">
-                    <ul  class="list-unstyled" ng-repeat="error in registererrorMessages">
-                        <li><span class="alert alert-warning" role="alert" style="font-size:xx-small" >{{error}}</span></li>
-                    </ul>
+                    <div class="alert-block">
+                        <ul class="list-unstyled" ng-repeat="error in registererrorMessages">
+                            <li><span class="alert alert-warning" role="alert" style="font-size:xx-small">{{error}}</span></li>
+                        </ul>
                     </div>
 
-                <span id="reauth-email" class="reauth-email"></span>
+                    <span id="reauth-email" class="reauth-email"></span>
 
                     <table>
                         <tr>
@@ -63,16 +62,18 @@
 
                     </div>
 
-</form><!-- /form -->
-           
-        </div>
-    </div><!-- /card-container -->
-</div><!-- /container -->
+                </form><!-- /form -->
 
-
+            </div>
+        </div><!-- /card-container -->
+    </div><!-- /container -->
+</div>
 <script src="../Apps/app.js"></script>
+<script src="../Controller/registerController.js"></script>
+
+<script src="../scripts/jquery-1.9.1.js"></script>
+<script src="../scripts/bootstrap.js"></script>
 <link href="../Styles/CSS/bootstrap.min.css" rel="stylesheet" />
+<script src="../Controller/registerController.js"></script>
 <link href="../Styles/CSS/style.css" rel="stylesheet" />
-
-
 
