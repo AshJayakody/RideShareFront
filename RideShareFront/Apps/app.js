@@ -15,10 +15,10 @@ app.config(['$routeProvider',
            }).
           when('/Register', {
               templateUrl: '../View/Register.html',
-              controller: 'registerController'
+              controller: 'registerController',
           }).
         otherwise({
-            redirectTo: '/login' , 
+            redirectTo: '/login' 
          
         });
   }]);
