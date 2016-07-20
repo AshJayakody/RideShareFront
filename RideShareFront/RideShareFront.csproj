@@ -409,11 +409,12 @@
     <Content Include="scripts\angular.min.js" />
     <Content Include="scripts\bootstrap.min.js" />
     <Content Include="scripts\jquery-3.0.0.min.js" />
+    <Content Include="Styles\bootstrap.js" />
     <Content Include="Styles\CSS\bootstrap-theme.css" />
     <Content Include="Styles\CSS\bootstrap.min.css" />
     <Content Include="Styles\CSS\map.css" />
     <Content Include="Styles\CSS\style.css" />
-    <Content Include="View\Index.html" />
+    <Content Include="Index.html" />
     <Content Include="View\map.html" />
     <Content Include="View\login.html" />
     <Content Include="View\register.html" />

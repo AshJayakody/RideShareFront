@@ -1,4 +1,4 @@
-﻿app.controller('loginController', ['$scope', '$http', function ($scope, $http) {
+﻿app.controller('loginController', ['$scope', '$http','$location', function ($scope, $http,$location) {
     $scope.title = "Login";
     $scope.isUser = false;
     $scope.isDriver = false;
@@ -40,8 +40,8 @@
     }
 
     $scope.register = function () {
-        //$location.path = "/Register";
-        window.location = "/View/Register.html";
+        $location.path('/register');
+       // window.location = "/View/Register.html";
     }
 
 
@@ -59,12 +59,12 @@
             $http.post('http://localhost:63603//api/Authentication/post', loginmodel).
                 success(function (data, status, headers, config) {
                     alert('Login Successfully!');
-                    window.location = "../View/map.html";
+                    $location.path('/map');
                 }).
                 error(function (data, status, headers, config) {
                     $scope.errorMessages = data;
                     alert("error");
-
+                   
                 });
 
         }

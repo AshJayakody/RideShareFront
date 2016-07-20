@@ -13,8 +13,8 @@ app.config(['$routeProvider',
                controller: 'showmapController',             
               
            }).
-          when('/Register', {
-              templateUrl: '../View/Register.html',
+          when('/register', {
+              templateUrl: '../View/register.html',
               controller: 'registerController'
           }).
         otherwise({
