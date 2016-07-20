@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 ﻿app.controller('loginController', ['$scope', '$http','$location', function ($scope, $http,$location) {
+=======
+﻿//var injectParams = ['$location', '$routeParams', 'authService'];
+app.controller('loginController', ['$scope', '$http','$location', function ($scope, $http,$location) {
+>>>>>>> origin/master
     $scope.title = "Login";
     $scope.isUser = false;
     $scope.isDriver = false;
@@ -40,8 +45,13 @@
     }
 
     $scope.register = function () {
+<<<<<<< HEAD
         $location.path('/register');
        // window.location = "/View/Register.html";
+=======
+        $location.url = '/Register';
+        //window.location = '/Register.html';
+>>>>>>> origin/master
     }
 
 
