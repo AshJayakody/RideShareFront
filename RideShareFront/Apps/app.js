@@ -17,6 +17,10 @@ app.config(['$routeProvider',
               templateUrl: '../View/register.html',
               controller: 'registerController'
           }).
+           when('/jasnypushoffcanvas', {
+               templateUrl: '../View/jasnypushoffcanvas.html'
+
+           }).
         otherwise({
             redirectTo: '/login' , 
          

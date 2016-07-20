@@ -1,4 +1,47 @@
-﻿h3 img {
+﻿body {
+	padding-top:50px;
+}
+.navbar-nav{
+    min-height:300px;
+}
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
+.navbar-toggle {
+    z-index:3;
+}
+
+.navbar-header {
+  float: none;
+}
+.navbar-toggle {
+  display: block;
+}
+.navbar-collapse.collapse {
+  display: none!important;
+}
+.navbar-nav {
+    
+  float: none!important;
+}
+.navbar-nav>li {
+  float: none;
+ 
+}
+.navbar-nav>li>a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.navbar-collapse.collapse.in{
+  display:block !important;
+}
+
+h3 img {
     max-height: 50px;
 }
 #map { 
@@ -6,4 +49,20 @@
     margin: 20px 0;
     border-radius: 5px;
     border: 1px solid silver;
+}
+
+.navbar-form #mylocation,
+.navbar-form  #destination {
+ 
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+    color:#ffffff ;
+    font-size:small;
+    background: transparent;
+    border: 0px;
+    border-bottom: 1px solid white;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 0px 0px white;
 }
