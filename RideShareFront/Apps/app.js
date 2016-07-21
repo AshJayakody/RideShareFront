@@ -1,4 +1,4 @@
-﻿var app = angular.module("myApp", ['ngRoute']);
+﻿var app = angular.module("myApp", ['ngRoute','ngMap']);
 
 
 app.config(['$routeProvider',
@@ -17,10 +17,7 @@ app.config(['$routeProvider',
               templateUrl: '../View/register.html',
               controller: 'registerController'
           }).
-           when('/maptest', {
-               templateUrl: '../View/maptest.html',
-               controller: 'maptestController'
-           }).
+           
         otherwise({
             redirectTo: '/login' , 
          

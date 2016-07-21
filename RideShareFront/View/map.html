@@ -1,16 +1,17 @@
-﻿<nav class="navbar navbar-inverse navbar-fixed-top">
+﻿<div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-header">
             <a class="navbar-brand" style="display:block" href="#">
-            <img src="../Assets/navigation/navigation.png" style="float:left;width:35px;height:35px;align-items:center;padding-bottom:10px" /><span style="float:left;font-size:small" ng-bind="username">Username</span>
+                <img src="../Assets/navigation/navigation.png" style="float:left;width:35px;height:35px;align-items:center;padding-bottom:10px" /><span style="float:left;font-size:small" ng-bind="username">Username</span>
             </a>
             <a class="navbar-brand navbar" href="#">Drivers</a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-            </button> 
-            <br /> 
-            <br />          
+            </button>
+            <br />
+            <br />
             <form class="navbar-form navbar-left" role="search">
                 <div class="form-inline">
                     <div class="content row">
@@ -23,15 +24,15 @@
                             <input type="text" class="form-control" style="font-size:small" id="destination" placeholder="Destination">
                         </div>
                     </div>
-                    
-                </div>                        
+
+                </div>
             </form>
-                   
-            
+
+
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-               
+
                 <li class="sidebar-brand">
                     <a href="#">
                         <img src="../Assets/navigation/edit.png" />
@@ -59,7 +60,7 @@
                 <li class="sidebar-brand">
                     <a href="#">
                         <img src="../Assets/navigation/about.png" />
-                       About
+                        About
                     </a>
                 </li>
                 <li class="sidebar-brand">
@@ -69,10 +70,11 @@
                     </a>
                 </li>
             </ul>
-           
+
         </div>
     </nav>
-    <div class="container" ng-controller="showmapController">    
+</div>
+    <!--<div class="container" ng-controller="showmapController">    
     <form name="searchForm" novalidate 
     ng-submit="search()">
         <div class="input-group">
@@ -84,15 +86,15 @@
             </span>
         </div>
     </form>
-        
-    <div id="map"></div>
+
+    <!--<div id="map"></div>
         <span>{{status}}</span>
         <div class="alert alert-danger text-center" role="alert" ng-show="apiError">
             <b>API Error : </b>
             <span>{{ apiStatus }}</span>
-        </div>
+        </div>-->
       
-    <form name="resForm" class="form-horizontal" novalidate 
+    <!--<form name="resForm" class="form-horizontal" novalidate 
     ng-submit="send()">
         <div class="form-group">
             <label for="resName" class="col-xs-2 control-label">Name</label>
@@ -122,7 +124,7 @@
             </div>
         </div>
     </form>
-</div>
+</div>-->-->
        
 
      

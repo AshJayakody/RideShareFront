@@ -282,7 +282,6 @@
     <Content Include="Content\uikit.gradient.min.css" />
     <Content Include="Content\uikit.min.css" />
     <Content Include="Controller\loginController.js" />
-    <Content Include="Controller\maptestController.js" />
     <Content Include="Controller\registerController.js" />
     <Content Include="Controller\showmapController.js" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -298,6 +297,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="scripts\angular-google-maps-street-view.js" />
+    <Content Include="scripts\angular-google-maps-street-view.min.js" />
+    <Content Include="scripts\angular-google-maps.js" />
+    <Content Include="scripts\angular-google-maps.min.js" />
     <Content Include="scripts\angular-mocks.js" />
     <Content Include="scripts\angular-route.js" />
     <Content Include="scripts\angular-route.min.js" />
@@ -410,6 +413,9 @@
     <Content Include="scripts\angular.min.js" />
     <Content Include="scripts\bootstrap.min.js" />
     <Content Include="scripts\jquery-3.0.0.min.js" />
+    <Content Include="scripts\lodash.js" />
+    <Content Include="scripts\lodash.min.js" />
+    <Content Include="scripts\ng-map.min.js" />
     <Content Include="Styles\bootstrap.js" />
     <Content Include="Styles\CSS\bootstrap-theme.css" />
     <Content Include="Styles\CSS\bootstrap.min.css" />
@@ -417,10 +423,8 @@
     <Content Include="Styles\CSS\map.css" />
     <Content Include="Styles\CSS\style.css" />
     <Content Include="Index.html" />
-    <Content Include="View\jasnypushoffcanvas.html" />
     <Content Include="View\map.html" />
     <Content Include="View\login.html" />
-    <Content Include="View\maptest.html" />
     <Content Include="View\register.html" />
     <Content Include="Web.config" />
   </ItemGroup>
