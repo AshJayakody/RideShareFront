@@ -13,22 +13,16 @@ app.config(['$routeProvider',
                controller: 'showmapController',             
               
            }).
-<<<<<<< HEAD
           when('/register', {
               templateUrl: '../View/register.html',
               controller: 'registerController'
-=======
-          when('/Register', {
-              templateUrl: '../View/Register.html',
-              controller: 'registerController',
->>>>>>> origin/master
           }).
            when('/maptest', {
                templateUrl: '../View/maptest.html',
                controller: 'maptestController'
            }).
         otherwise({
-            redirectTo: '/login' 
+            redirectTo: '/login' , 
          
         });
   }]);

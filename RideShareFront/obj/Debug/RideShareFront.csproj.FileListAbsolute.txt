@@ -165,6 +165,7 @@ C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideSh
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\Microsoft.Owin.Security.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\Microsoft.Owin.Security.Cookies.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\System.Web.Http.xml
+C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\System.Web.Http.Cors.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\System.Web.Http.WebHost.xml
 C:\Users\ashjayakody\Documents\Visual Studio 2015\Projects\RideShareFront\RideShareFront\bin\Microsoft.Owin.Host.SystemWeb.xml

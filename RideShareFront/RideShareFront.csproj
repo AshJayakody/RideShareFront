@@ -395,10 +395,6 @@
     <Content Include="scripts\jquery-1.9.1.js" />
     <Content Include="scripts\jquery-1.9.1.min.js" />
     <Content Include="scripts\jquery-1.9.1.min.map" />
-    <Content Include="Styles\Font\glyphicons-halflings-regular.eot" />
-    <Content Include="Styles\Font\glyphicons-halflings-regular.ttf" />
-    <Content Include="Styles\Font\glyphicons-halflings-regular.woff" />
-    <Content Include="Styles\Font\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -416,39 +412,12 @@
     <Content Include="scripts\jquery-3.0.0.min.js" />
     <Content Include="Styles\bootstrap.js" />
     <Content Include="Styles\CSS\bootstrap-theme.css" />
-    <Content Include="Styles\CSS\bootstrap.css" />
     <Content Include="Styles\CSS\bootstrap.min.css" />
-<<<<<<< HEAD
     <Content Include="Styles\CSS\jasnystyles.css" />
-=======
-<<<<<<< HEAD
->>>>>>> origin/master
     <Content Include="Styles\CSS\map.css" />
-=======
-    <Content Include="Styles\CSS\canvasstyles.css" />
-    <Content Include="Styles\CSS\index2css.css" />
-    <Content Include="Styles\CSS\jasny-bootstrap.css" />
-    <Content Include="Styles\CSS\jasnystyles.css" />
-    <Content Include="Styles\CSS\simple-sidebar.css" />
->>>>>>> origin/master
     <Content Include="Styles\CSS\style.css" />
-<<<<<<< HEAD
     <Content Include="Index.html" />
     <Content Include="View\jasnypushoffcanvas.html" />
-=======
-<<<<<<< HEAD
-    <Content Include="View\index.html" />
-=======
-    <Content Include="Styles\Font\glyphicons-halflings-regular.svg" />
-    <Content Include="View\Index.html" />
-<<<<<<< HEAD
-=======
-    <Content Include="View\index1.html" />
-    <Content Include="View\index2.html" />
-    <Content Include="View\login.html" />
->>>>>>> origin/master
->>>>>>> origin/master
->>>>>>> origin/master
     <Content Include="View\map.html" />
     <Content Include="View\login.html" />
     <Content Include="View\maptest.html" />
@@ -458,7 +427,9 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Styles\Font\" />
+  </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
