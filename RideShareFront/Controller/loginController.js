@@ -59,7 +59,7 @@
             $http.post('http://localhost:63603//api/Authentication/post', loginmodel).
                 success(function (data, status, headers, config) {
                     alert('Login Successfully!');
-                    $location.path('/map');
+                    $location.path('/newmap');
                 }).
                 error(function (data, status, headers, config) {
                     $scope.errorMessages = data;

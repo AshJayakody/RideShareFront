@@ -1,141 +1,170 @@
-﻿<div>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-header">
-            <a class="navbar-brand" style="display:block" href="#">
-                <img src="../Assets/navigation/navigation.png" style="float:left;width:35px;height:35px;align-items:center;padding-bottom:10px" /><span style="float:left;font-size:small" ng-bind="username">Username</span>
-            </a>
-            <a class="navbar-brand navbar" href="#">Drivers</a>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <br />
-            <br />
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-inline">
-                    <div class="content row">
+﻿<!--<div ng-controller="showmapController">-->
+        <div>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-header">
+                    <a class="navbar-brand" style="display:block" href="#">
+                        <img src="../Assets/navigation/navigation.png" style="float:left;width:35px;height:35px;align-items:center;padding-bottom:10px" /><span style="float:left;font-size:small" ng-bind="username">Username</span>
+                    </a>
+                    <a class="navbar-brand navbar" href="#">Drivers</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--<br />
+                    <br />
+                    <form name="searchForm" novalidate class="navbar-form navbar-left" role="search">-->
+                    <!--<div class="form-inline"> removed-->
+                    <!--<div class="content row">
                         <div class="col-xs-6 " style="padding-right: 5px;">
-                            <label class="control-label" style="color:white" for="mylocation">My Location</label>
-                            <input type="text" class="form-control" style="font-size:small" id="mylocation" placeholder="My Location">
+                            <div class="input-group">
+                                <label class="control-label" style="color:white" for="mylocation">My Location</label>
+                                <input name="mylocationplace" type="text" class="form-control" ng-model="mylocation" style="font-size:small" id="mylocation" placeholder="My Location" required autofocus>
+                                <span class="input-group-btn">
+                                    <button class="hidden"
+                                            ng-click="searchMyLocation()" ng-disabled="searchForm.$invalid">
+                                        Search
+                                    </button>
+                                </span>
+                            </div>
                         </div>
-                        <div class="col-xs-6 " style="padding-right: 5px;">
-                            <label class="control-label" style="color:white" for="destination">Destination</label>
-                            <input type="text" class="form-control" style="font-size:small" id="destination" placeholder="Destination">
+                            <div class="col-xs-6 " style="padding-right: 5px;">
+                                <div class="input-group">
+                                    <label class="control-label" style="color:white" for="destination">Destination</label>
+                                    <input name="destinationplace" type="text" class="form-control" ng-model="destination" style="font-size:small" id="destination" placeholder="Destination" required autofocus>
+                                    <span class="input-group-btn">
+                                        <button class="hidden"
+                                                ng-click="searchDestination()" ng-disabled="searchForm.$invalid">
+                                            Search
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>-->
+                    <!--</div>removed-->
+                    <!--</div>
+                    </form>-->
+                    <!--<form id="searchform" name="searchForm" novalidate
+                          ng-submit="search()">
+                        <div class="input-group">
+                            <input name="place" type="text" class="form-control"
+                                   ng-model="searchPlace" required autofocus />
+                            <span class="input-group-btn">
+                                <button class="hidden"
+                                        ng-disabled="searchForm.$invalid">
+                                    Search
+                                </button>
+                            </span>
                         </div>
-                    </div>
+                    </form>-->
+
 
                 </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+
+                        <li class="sidebar-brand">
+                            <a href="#">
+                                <img src="../Assets/navigation/edit.png" />
+                                Edit Profile
+                            </a>
+                        </li>
+                        <li class="sidebar-brand">
+                            <a href="#">
+                                <img src="../Assets/navigation/history.png" />
+                                History
+                            </a>
+                        </li>
+                        <li class="sidebar-brand">
+                            <a href="#">
+                                <img src="../Assets/navigation/settings.png" />
+                                Settings
+                            </a>
+                        </li>
+                        <li class="sidebar-brand">
+                            <a href="#">
+                                <img src="../Assets/navigation/help.png" />
+                                Help
+                            </a>
+                        </li>
+                        <li class="sidebar-brand">
+                            <a href="#">
+                                <img src="../Assets/navigation/about.png" />
+                                About
+                            </a>
+                        </li>
+                        <li class="sidebar-brand">
+                            <a href="#">
+                                <img src="../Assets/navigation/logout.png" />
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+            <!--map-->
+
+
+        <!--</div>-->
+
+        <div ng-include="'newmap.html'"></div>
+
+
+
+
+
+        <!--<div class="container">
+
+
+            <div id="map"></div>
+            <span>{{status}}</span>
+            <div class="alert alert-danger text-center" role="alert" ng-show="apiError">
+                <b>API Error : </b>
+                <span>{{ apiStatus }}</span>
+            </div>
+
+
+
+            <form name="resForm" class="form-horizontal" novalidate
+                  ng-submit="send()">
+                <div class="form-group">
+                    <label for="resName" class="col-xs-2 control-label">Name</label>
+                    <div class="col-xs-10">
+                        <input name="resName" type="text" class="form-control"
+                               ng-model="place.name" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="resLat" class="col-xs-2 control-label">Latitude</label>
+                    <div class="col-xs-10">
+                        <input name="resLat" type="number" class="form-control"
+                               ng-model="place.lat" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="resLng" class="col-xs-2 control-label">Longitude</label>
+                    <div class="col-xs-10">
+                        <input name="resLng" type="number" class="form-control"
+                               ng-model="place.lng" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-offset-2 col-xs-10">
+                        <button class="btn btn-success"
+                                ng-disabled="resForm.$invalid">
+                            Confirm
+                        </button>
+                    </div>
+                </div>
             </form>
+        </div>-->
+    </div>
 
 
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
 
-                <li class="sidebar-brand">
-                    <a href="#">
-                        <img src="../Assets/navigation/edit.png" />
-                        Edit Profile
-                    </a>
-                </li>
-                <li class="sidebar-brand">
-                    <a href="#">
-                        <img src="../Assets/navigation/history.png" />
-                        History
-                    </a>
-                </li>
-                <li class="sidebar-brand">
-                    <a href="#">
-                        <img src="../Assets/navigation/settings.png" />
-                        Settings
-                    </a>
-                </li>
-                <li class="sidebar-brand">
-                    <a href="#">
-                        <img src="../Assets/navigation/help.png" />
-                        Help
-                    </a>
-                </li>
-                <li class="sidebar-brand">
-                    <a href="#">
-                        <img src="../Assets/navigation/about.png" />
-                        About
-                    </a>
-                </li>
-                <li class="sidebar-brand">
-                    <a href="#">
-                        <img src="../Assets/navigation/logout.png" />
-                        Logout
-                    </a>
-                </li>
-            </ul>
 
-        </div>
-    </nav>
 
-    <!--map-->
 
-</div>
-    <div class="container" ng-controller="showmapController">    
-    <div id="map"></div>
-        <span>{{status}}</span>
-        <div class="alert alert-danger text-center" role="alert" ng-show="apiError">
-            <b>API Error : </b>
-            <span>{{ apiStatus }}</span>
-        </div>
 
-        <form name="searchForm" novalidate
-              ng-submit="search()">
-            <div class="input-group">
-                <input name="place" type="text" class="form-control"
-                       ng-model="searchPlace" required autofocus />
-                <span class="input-group-btn">
-                    <button class="btn btn-primary"
-                            ng-disabled="searchForm.$invalid">
-                        Search
-                    </button>
-                </span>
-            </div>
-        </form>
-      
-    <form name="resForm" class="form-horizontal" novalidate 
-    ng-submit="send()">
-        <div class="form-group">
-            <label for="resName" class="col-xs-2 control-label">Name</label>
-            <div class="col-xs-10">
-                <input name="resName" type="text" class="form-control" 
-                ng-model="place.name" required />
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="resLat" class="col-xs-2 control-label">Latitude</label>
-            <div class="col-xs-10">
-                <input name="resLat" type="number" class="form-control" 
-                ng-model="place.lat" required />
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="resLng" class="col-xs-2 control-label">Longitude</label>
-            <div class="col-xs-10">
-                <input name="resLng" type="number" class="form-control" 
-                ng-model="place.lng" required />
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-xs-offset-2 col-xs-10">
-                <button class="btn btn-success" 
-                ng-disabled="resForm.$invalid">Confirm</button>
-            </div>
-        </div>
-    </form>
-</div>
-       
-
-     
-
-   
-   
-
-    
 

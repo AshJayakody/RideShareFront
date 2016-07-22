@@ -1,6 +1,6 @@
-﻿body {
-	padding-top:300px;
-}
+﻿/*body {
+	padding-top:50px;
+}*/
 .navbar-nav{
     min-height:300px;
 }
@@ -45,11 +45,12 @@ h3 img {
     max-height: 50px;
 }
 #map { 
-    height: 400px;
-    margin: 20px 0;
+    height: 500px;
+    margin: 100px 0;
     border-radius: 5px;
     border: 1px solid silver;
 }
+
 
 .navbar-form #mylocation,
 .navbar-form  #destination {
@@ -66,3 +67,56 @@ h3 img {
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     box-shadow: inset 0 0px 0px white;
 }
+
+/*map styles
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #map {
+        height: 100%;
+    }*/
+
+    .controls {
+        margin-top: 10px;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    #origin-input,
+    #destination-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 200px;
+    }
+
+        #origin-input:focus,
+        #destination-input:focus {
+            border-color: #4d90fe;
+        }
+
+    #mode-selector {
+        color: #fff;
+        background-color: #4d90fe;
+        margin-left: 12px;
+        padding: 5px 11px 0px 11px;
+    }
+
+        #mode-selector label {
+            font-family: Roboto;
+            font-size: 13px;
+            font-weight: 300;
+        }
+
