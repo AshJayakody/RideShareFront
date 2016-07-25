@@ -6,8 +6,8 @@
     //$scope.password = "";
     $scope.name = "Angular Works";
 
-    $scope.userImage = "/Assets/login/userLog_icon.png";
-    $scope.driverImage = "/Assets/login/driverLog_icon.png";
+    $scope.userImage = "Assets/img/login/userLog_icon.png";
+    $scope.driverImage = "Assets/img/login/driverLog_icon.png";
 
 
 
@@ -17,10 +17,10 @@
     }
     $scope.setUserImage = function () {
         if ($scope.isUser == true) {
-            $scope.userImage = "/Assets/login/userLogActive_icon.png";
+            $scope.userImage = "Assets/img/login/userLogActive_icon.png";
         }
         else {
-            $scope.userImage = "/Assets/login/userLog_icon.png";
+            $scope.userImage = "Assets/img/login/userLog_icon.png";
         }
     }
 
@@ -32,10 +32,10 @@
     }
     $scope.setDriverImage = function () {
         if ($scope.isDriver == true) {
-            $scope.driverImage = "/Assets/login/driverLogActive_icon.png";
+            $scope.driverImage = "Assets/img/login/driverLogActive_icon.png";
         }
         else {
-            $scope.driverImage = "/Assets/login/driverLog_icon.png";
+            $scope.driverImage = "Assets/img/login/driverLog_icon.png";
         }
     }
 
@@ -59,7 +59,7 @@
             $http.post('http://localhost:63603//api/Authentication/post', loginmodel).
                 success(function (data, status, headers, config) {
                     alert('Login Successfully!');
-                    $location.path('/newmap');
+                    $location.path('/map');
                 }).
                 error(function (data, status, headers, config) {
                     $scope.errorMessages = data;

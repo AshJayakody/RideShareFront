@@ -39,9 +39,9 @@
         );
     }
 
-    $scope.send = function () {
-        alert($scope.mylocationplace.name + ' : ' + $scope.mylocationplace.lat + ', ' + $scope.mylocationplace.lng);
-    }
+    //$scope.send = function () {
+    //    alert($scope.mylocationplace.name + ' : ' + $scope.mylocationplace.lat + ', ' + $scope.mylocationplace.lng);
+    //}
 
     Map.init();
 });
