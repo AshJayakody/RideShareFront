@@ -20,7 +20,7 @@
                         <div class="col-xs-6 " style="padding-right: 5px;">
                             <div class="input-group">
                                 <label class="control-label" style="color:white" for="mylocation">My Location</label>
-                                <input name="mylocationplace" type="text" class="form-control" ng-model="mylocation" style="font-size:small" id="mylocation" placeholder="My Location" required autofocus googleplace/>
+                                <input name="mylocationplace" type="text" class="form-control" ng-model="mylocation" ng-model-options="{ debounce: 800 }" style="font-size:small" id="mylocation" placeholder="My Location" required autofocus googleplace/>
                                 <span class="input-group-btn">
                                     <button class="hidden"
                                             ng-click="searchMyLocation()" ng-disabled="searchForm.$invalid">

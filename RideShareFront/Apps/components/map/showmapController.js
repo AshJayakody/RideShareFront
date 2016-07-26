@@ -2,7 +2,8 @@
     $scope.gPlace;
     $scope.mylocationplace = {};
     $scope.destinationplace = {};
-    //
+    $scope.driverLocations = {};
+    
     $scope.searchMyLocation = function () {
         $scope.apiError = false;
         Map.search($scope.mylocation)
@@ -24,6 +25,7 @@
 
     $scope.searchDestination = function () {
         $scope.apiError = false;
+        if ($scope.destination != null){
         Map.search($scope.destination)
         .then(
             function (res) { // success
@@ -37,7 +39,23 @@
                 $scope.apiStatus = status;
             }
         );
+        }
     }
+
+    $scope.$watch('mylocation', function ($http) {
+        fetch();
+
+        function fetch($http) {
+            $http.get('http://localhost:63603//api/DriverLocations')
+            .then
+                (function (response) {
+                    Map.addDriverMarker(response);
+
+                });
+        }
+    },true);
+
+    
 
     //$scope.send = function () {
     //    alert($scope.mylocationplace.name + ' : ' + $scope.mylocationplace.lat + ', ' + $scope.mylocationplace.lng);

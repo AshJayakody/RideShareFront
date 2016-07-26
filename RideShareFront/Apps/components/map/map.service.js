@@ -1,4 +1,5 @@
 ﻿app.service('Map', function ($q) {
+    
 
     this.init = function () {
         var options = {
@@ -31,16 +32,26 @@
         this.marker = new google.maps.Marker({
             map: this.map,
             position: res.geometry.location,
-            icon:'Assets/main/person.png',
+            icon: 'Assets/img/main/person.png',
             animation: google.maps.Animation.DROP
         });
         this.map.setCenter(res.geometry.location);
     }
 
-    //this.getdrivers = function () {
-
+    this.addDriverMarker = function (res) {
+        if (this.marker) this.marker.setMap(null);
+        this.marker = new google.maps.Marker({
+            map: this.map,
+            position: new google.maps.LatLng(res.latitude, res.longitude),
+            icon: 'Assets/img/main/car.png',
+            title: res.DriverName,
+        });
+        
+    }
+   
+    //this.driverLocation = function () {
+    //    return $http.get('http://localhost:63603//api/DriverLocations');
     //}
-    
     
 
 });
